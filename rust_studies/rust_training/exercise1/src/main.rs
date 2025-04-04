@@ -24,3 +24,31 @@ fn main() {
 
     println!("The age of {} calculated to the year of {} is {}", name, year_of_birth, age);
 }
+
+fn conditional_examples() {
+  let number = 15;
+
+  // Basic if statement
+  if number > 10 {
+      println!("{} is greater than 10", number);
+  }
+
+  // if-else statement
+  if number % 2 == 0 {
+      println!("{} is even", number);
+  } else {
+      println!("{} is odd", number);
+  }
+
+  // if-else if-else chain
+  if number < 0 {
+      println!("{} is negative", number);
+  } else if number == 0 {
+      println!("The number is zero");
+  } else {
+      println!("{} is positive", number);
+  }
+
+  // Using if as an expression to assign a value
+  let is_even = if number % 2 == 0 { true } else { false };
+  println!("Is the number even? {}", is_even);
