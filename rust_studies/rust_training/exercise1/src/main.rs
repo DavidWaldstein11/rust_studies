@@ -52,3 +52,28 @@ fn conditional_examples() {
   // Using if as an expression to assign a value
   let is_even = if number % 2 == 0 { true } else { false };
   println!("Is the number even? {}", is_even);
+
+
+// The "switch case" in rust
+
+fn match_example() {
+  let number = 3;
+
+  match number {
+      1 => println!("One"),
+      2 => println!("Two"),
+      3 => println!("Three"),
+      4 | 5 | 6 => println!("Four, Five or Six"),
+      7..=10 => println!("Between Seven and Ten"),
+      _ => println!("Something else"),
+  }
+
+  let day = "Tuesday";
+
+  match day {
+      "Monday" => println!("Start of the work week"),
+      "Friday" => println!("Almost the weekend!"),
+      "Saturday" | "Sunday" => println!("Weekend!"),
+      _ => println!("Just another weekday"),
+  }
+}
