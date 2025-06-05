@@ -9,6 +9,8 @@ fn main() {
     let birth_month: u16 = 1;
     let birth_day: u16 = 31;
 
+    let birth_day_2: u16 = 31;
+
     let current_year: u16 = 2025;
     let current_month: u16 = 1;
     let current_day: u16 = 1;
